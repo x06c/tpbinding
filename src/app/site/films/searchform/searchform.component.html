@@ -14,3 +14,11 @@
         </button>
     </form>
 </div>
+<div>
+    <div *ngIf="errors" class="alert alert-danger">
+        <strong>Aucun résultat !</strong>
+        {{errors}}
+    </div>
+    <div *ngIf="results" class="list-group" [movieList]="results">
+    </div>
+</div>
